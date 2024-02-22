@@ -1,24 +1,33 @@
 \subsection*{Teori}\label{Teori}
-Methylsalicylat kan dannes ved kondensering af salicylsyre (2-hydroxy-benzoesyre) og methanol, som på reaktionsskema \ref{fig:rek1}.
-
+Methylsalicylat kan dannes ved kondensering af salicylsyre
+(2-hydroxy-benzoesyre) og methanol, som på reaktionsskema \ref{fig:rek1}.
 
 \begin{figure}[h]
-    \centering
-    \ce{C6H6OHCOOH (aq) + CH3OH (aq) <=> C6H6OHCOOCH3 (aq) + H2O (l)}
-    \label{fig:rek1}
-    \caption{Kondensation af methylsalicylat}
+  \centering
+  \ce{C6H6OHCOOH (aq) + CH3OH (aq) <=> C6H6OHCOOCH3 (aq) + H2O (l)}
+  \caption{Kondensation af methylsalicylat}
+  \label{fig:rek1}
 \end{figure}
 
-Reaktionsskema \ref{fig:rek1} kan også ses på strukturformel i figur \ref{fig:rek2}
+Reaktionsskema~\ref{fig:rek1} kan også ses på strukturformel på
+figur~\ref{fig:rek2}
 
 \begin{figure}[h]
-	\centering
-	\schemestart
- \chemfig{**6(---(-OH)-(-(=[::60]O)-[::-60]OH)--)}
-   \+{,,-10pt}
-   \chemfig{H-[:30]-[:-30]H-OH}
-	\schemestop
-	\label{fig:rek2}
-	\caption{Kondensation af methylsalicylat}
+  \centering
+  \scalebox{.9}{
+  \schemestart
+  \chemfig{**6((- (=_[::-60]O)-[::60]OH)- (-OH)-----)}
+  \+
+  \chemfig{C (-[::0]H) (-[::90]OH) (-[::180]H) (-[::270]H)}
+  \arrow{<=>}
+  \chemfig{
+    **6((- (-[::-60]O-)=_[::60]O)- (-OH)-----)
+  }
+  \+
+  \chemfig{O (-[::60]H) (-[::-60]H)}
+  \schemestop
+  }
+  \caption{Kondensation af methylsalicylat}
+  \label{fig:rek2}
 \end{figure}
 

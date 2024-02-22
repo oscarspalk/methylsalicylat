@@ -6,14 +6,34 @@
 \usepackage{siunitx}
 \usepackage{multicol}
 \usepackage{wrapfig}
-\usepackage{pgfplots}
-\usepackage{pgfplotstable}
-\usepackage{pgf}
-\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{chemfig}
-\pgfplotsset{compat=1.18}
+\usepackage[T1]{fontenc}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
 
+\hypersetup{
+    colorlinks=false,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={SRO i Kinematik},
+    pdfpagemode=FullScreen,
+}
+\captionsetup[figure]{name={Reaktionsskema}}
 \graphicspath{{./images/}}
+
+\renewcommand{\thesection}{\Roman{section}} 
+\DeclareMathSymbol{*}{\mathbin}{symbols}{01}
+
+\newcommand{\Title}{Syntese af methylsalicylat}
+\newcommand{\Author}{Oscar 2.bx}
+\newcommand{\Institution}{Egaa Gymnasium}
+\newcommand{\Subtitle}{}
+\newcommand{\Date}{\today}
+\newcommand{\pColor}{BrickRed}
 
 \begin{document}
 
@@ -22,6 +42,5 @@
 \pagebreak
 
 \include{introduction/introduction}
-\include{del1/del1}
 
 \end{document}
