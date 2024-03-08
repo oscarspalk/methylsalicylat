@@ -22,7 +22,6 @@
     pdftitle={SRO i Kinematik},
     pdfpagemode=FullScreen,
 }
-\captionsetup[figure]{name={Reaktionsskema}}
 \graphicspath{{./images/}}
 
 \renewcommand{\thesection}{\Roman{section}} 
@@ -44,7 +43,9 @@
 
 \pagebreak
 
-\include{introduction/introduction}
-\include{del1/del1}
+\input{introduction/introduction}
+\input{del1/del1}
+\input{fejlkilder.tex}
+\input{konklusion.tex}
 
 \end{document}
